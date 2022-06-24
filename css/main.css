@@ -13,7 +13,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 80px;
-    background: var(--cor1-paleta-azul);
+    background: var(--cor5-paleta-azul);
+    opacity: 95%;
 }
 .list-links-menu{
     display: flex;
@@ -22,16 +23,47 @@
     justify-items: center;
     list-style: none;
     justify-content: space-between;
+    padding-right: 20px;
 }
 .list-links-menu a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     font-weight: lighter;
+    text-transform: lowercase;
     text-decoration: none;
     color: var(--cor6-paleta-azul);
 }
+.contato{
+    padding: 10px;
+    background: var(--cor4-paleta-azul);
+    border-radius: 8px;
+    color: var(--cor6-paleta-azul);
+}
+#Logo{
+    display: grid;
+    grid-template-rows: 25px 50px 25px;
+}
 #Logo h1{
-    align-self: center;
+    text-transform: capitalize;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    grid-row: 2;
     justify-self: center;
-   text-align: center;
+    color: var(--cor6-paleta-azul);
+}
+#Logo h1::first-letter{
+    color: var(--cor4-paleta-azul);
+}
+.redes-nav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+.redes-nav img{
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
 }
