@@ -1,0 +1,32 @@
+@media (min-width: 800px) and (max-width: 900px){
+    .list-links-menu{
+        gap: 20px;
+    }
+    .list-links-menu a{
+        font-size: 1.2rem;
+    }
+    #Logo h1{
+        position: relative;
+    }
+    #Logo h1::before{
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 80px;
+        left: -56px;
+        top: -26px;
+        border-radius: 20px;
+        background: var(--cor4-paleta-azul);
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        opacity: 85%;
+        transform: rotateZ(210deg);
+    }
+    .redes-nav{
+        margin-left: 10px;
+        gap: 20px;
+    }
+    .redes-nav img{
+        width: 30px;
+        height: 30px;
+    }
+}
