@@ -238,7 +238,6 @@
     grid-template-rows: 300px 280px;
     height: 580px;
     border-radius: 10px;    
-    background: var(--cor2-paleta-azul);
 }
 .projects img{
     border-start-end-radius: 10px;
@@ -281,6 +280,33 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.267);
     background: var(--cor1-paleta-azul);/*
     clip-path: circle(50% at 50% 50%);*/
+}
+.comming-son{
+    display: grid;
+    margin: auto;
+    gap: 20px;
+}
+.comming-son h3{
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.comming-son img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    background: var(--cor6-paleta-azul);
+    clip-path: circle(50% at 50%  50%);
+}
+.rodape{
+    height: 80px;
+    background: var(--cor5-paleta-azul);
+}
+.rodape h2{
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--cor6-paleta-azul);
 }
 @media (min-width: 800px) and (max-width: 1000px){
     .list-links-menu{
