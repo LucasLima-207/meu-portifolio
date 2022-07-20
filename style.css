@@ -308,8 +308,36 @@ nav{
    .nav-slider{
     display: none;
    }
+   .itens-projeto:hover{
+    margin: 0px 0px 0px 0px;
+   }
+   .meu-projeto{
+    gap: 10px;
+    row-gap: 30px;
+   }
+   .titulo-project{
+    padding-bottom: 100px;
+   }
+   .titulo-project::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 30px;
+    transform: rotateZ(50deg);
+    top: 90px;
+    left: 40px;
+    height: 160px;
+    background: var(--clr-primary6);
+   }
+   .titulo-project::after{
+    width: 40px;
+    transform: rotateZ(50deg);
+    top: 90px;
+    right: 180px;
+    height: 200px;
+   }
 }
-@media (min-width: 490px) and (max-width: 600px){
+@media (min-width: 290px) and (max-width: 600px){
     .nav-header{
         display: none;
     }
@@ -321,5 +349,22 @@ nav{
     }
     .intro{
         gap: 0px;
+    }
+    .itens-projeto:hover{
+        margin: 0px 0px 0px 0px;
+    }
+    .my-skills{
+        flex-direction: column;
+    }
+    .meu-projeto{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .titulo-project{
+        padding: 0px;
+        text-align: center;
+    }
+    .titulo-project::after, .titulo-project::before{
+        display: none;
     }
 }
