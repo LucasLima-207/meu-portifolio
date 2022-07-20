@@ -19,7 +19,7 @@ body{
     --clr-primary6: #F20519;
     --max-width: 1200px;
     --time-transition: all 0.4s linear;
-    --transaltedDeg90: 90deg;
+    --transaltedDeg90: 180deg;
     --font-family-Allerta: 'Allerta Stencil', sans-serif;
     --font-family-Ibarra: 'Ibarra Real Nova', serif;
 }
@@ -242,6 +242,11 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: var(--time-transition);
+    position: relative;
+}
+.itens-projeto:hover{
+    margin: 10px 10px 80px 10px;
 }
 .itens-projeto img{
     object-fit: cover;
@@ -267,10 +272,34 @@ nav{
 }
 .infor-projeto{
     width: 300px;
+    display: flex;
+    flex-direction: column;
     border-left: 1px solid var(--clr-primary6);
     border-bottom: 1px solid var(--clr-primary6);
     border-right: 1px solid var(--clr-primary6);
-    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.link-do-projeto img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    z-index: 1;
+    border: 2px solid var(--clr-primary6);
+    border-radius: 50px;
+    background: var(--clr-primary5);
+    left: 120px;
+    transition-duration: var(--time-transition);
+}
+.link-do-projeto img:hover{
+    transform: rotateZ(var(--transaltedDeg90));
+    transition-delay: 0.4s;
+    transition-duration: 1s;
+}
+.sobre-mim{
+    margin-top: 180px;
+    display: flex;
+    background: var(--clr-primary5);
 }
 @media (min-width: 600px) and (max-width: 1200px){
    .btn-menu{
