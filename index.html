@@ -1,80 +1,98 @@
 <!DOCTYPE html>
-<html lang="Pt-Br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Lucas de Lima da Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Nav Bar</title>
 </head>
 <body>
-    <nav class="menu-principal">
-      <header id="Logo">
-         <h1>Lucas Lima</h1>
-      </header>
-      <ul class="list-links-menu"> 
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a class="contato" href="html/contato.html">Contato</a></li>
-        <li><a href="">Projetos</a></li>
-      </ul>
-      <ul class="redes-nav">
-        <li><a href=""><img src="img/icons-links-nav/icons8-github-50.png" alt=""></a></li>
-        <li><a href=""><img src="img/icons-links-nav/icons8-instagram-50.png" alt=""></a></li>
-        <li><a href=""><img src="img/icons-links-nav/icons8-linkedin-circundado-50.png" alt=""></a></li>
-      </ul>
+    <nav>
+       <h1 id="logo">Lucas</h1>
+       <ul class="nav-header">
+          <li><a href="">Home</a></li>
+          <li><a href="">Contato</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Historia</a></li>   
+       </ul> 
+       <ul class="nav-slider">
+         <li><a href="">Home</a></li>
+         <li><a href="">Sobre</a></li>
+         <li><a href="">Contato</a></li>
+         <li><a href="">Historia</a></li>
+       </ul>
+       <button type="button" class="btn-menu">
+        <img src="icons8-cardápio-30.png" alt="">
+     </button>
     </nav>
     <main>
-      <article class="minha-apresentacao">
-        <div class="minha-historia">
-          <h2>Eu sou Lucas</h2>
-          <p>Sou desenvolvendo front-end júnior com experiência UI, UIX design </p>
-          <a href="">SOBRE</a>
-        </div>
-        <div class="minha-imagem">
-          <img src="img/minha-image/IMG_20220615_065042.jpg" alt="">
-        </div>
-      </article>
-      <section class="intro">
-        <div class="mensagem-intro">
-          <h3>Vamos para Serviços</h3>
-          <p>Olha eu sou Lucas sou desenvolvendo estagiario front-end,  com conhecimento de java, 
-             php, javascript com padrão ecm6, pórem sou altamente curioso e aprendendo sempre na 
-             prática, estou disposto a está sempre mim adptando qualquer interesse você poder mim  
-             contato clikado no portâo abaixo:
-          </p>
-          <a href="">Contato</a>
-        </div>
-      </section>
+      <div class="introducao">
+        <img class="minha-foto" src="IMG_20220313_170019.jpg" alt="">
+         <h2>Olha sou Lucas de Lima da Silva</h2>
+         <img src="icones/arvore-de-natal-abstrata.png" alt="">
+         <button type="button" class="more-my">
+           Saiba Mais Sobre Mim
+         </button>
+         <aside class="my-skills">
+           <div class="itens-skills">
+              <img src="icones/icons8-ui-64.png" alt="">
+              <h2>Sou UI</h2>
+              <p>Possuo cursos e estudo sobre UI</p>
+              <a class="saiba-skills" href="">Saiba Mais</a>
+           </div>
+           <div class="itens-skills">
+              <img src="icones/icons8-ux-64.png" alt="">
+              <h2>Sou UX</h2>
+              <p>Possuo cursos e formação de UX com provetos</p>
+              <a class="saiba-skills" href="">Saiba Mais</a>
+          </div>
+          <div class="itens-skills">
+              <img src="icones/icons8-html-5-60.png" alt="">
+              <h2>Sou Front-End</h2>
+              <p>Sou denselvovendo front-end, veja meu projetos</p>
+              <a class="saiba-skills" href="">Saiba Mais</a>
+          </div>
+         </aside>
+      </div>
       <section class="meu-projetos">
-        <header>
-          <h2>Meu projetos de desenvolvimento</h2>
-        </header>
-        <section class="list-project">
-          <article class="projects">
-            <img src="img/img-do-projetos/edvin-johansson-rlwE8f8anOc-unsplash.jpg" alt="">
-            <div class="projects-infor">
-              <a href=""><img src="img/icons-links-nav/icons8-link-60.png" alt=""></a>
-              <h3>Projeto Horizonte</h3>
+        <aside class="image-project">
+
+        </aside>      
+        <section class="meu-projeto">
+          <header class="titulo-project">
+            <h2>Meu Projetos</h2>  
+          </header>
+          <article class="itens-projeto">
+            <img src="projeto/edvin-johansson-rlwE8f8anOc-unsplash (1).jpg" alt="">
+            <h3>Projeto Horizont</h3>
+            <div class="infor-projeto">
+
             </div>
           </article>
-          <article class="projects">
-            <div class="comming-son">
-              <img src="img/icones/icons8-desbloquear-2-100.png" alt="">
-              <h3>Em Breve</h3>
+          <article class="itens-projeto">
+             <img src="projeto/edvin-johansson-rlwE8f8anOc-unsplash (1).jpg" alt="">
+             <h3>EM BREVE</h3>
+             <div class="infor-projeto">
+              
             </div>
           </article>
-          <article class="projects">
-            <div class="comming-son">
-              <img src="img/icones/icons8-desbloquear-2-100.png" alt="">
-              <h3>Em Breve</h3>
-            </div>
+          <article class="itens-projeto">
+              <img src="projeto/edvin-johansson-rlwE8f8anOc-unsplash (1).jpg" alt="">
+              <h3>EM BREVE</h3>
+              <div class="infor-projeto">
+              
+              </div>
           </article>
         </section>
       </section>
     </main>
-    <footer class="rodape">
-      <h2>@Todos os direitos reservados Lucas Lima 2022</h2>
+    <footer>
+
     </footer>
+    <script src="navbar.js"></script>
 </body>
 </html>
